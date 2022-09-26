@@ -36,7 +36,11 @@
              console.log("error is----"+error.message);
              if (error.message==="responseReceived.sys is undefined"){
                  alert("Could not find this location.");
-             }
+             } else if (error.cod===undefined){
+                window.alert("Location not found /Invalid City name.");               
+            } else {
+                window.alert("Error occured"+error);
+            }
          });
      }
 
@@ -81,6 +85,8 @@
                 window.alert("Location not found /Invalid City name.");                
             } else if (error.cod===undefined){
                 window.alert("Location not found /Invalid City name.");               
+            } else {
+                window.alert("Error occured"+error);
             }
         });
     }
