@@ -1,0 +1,66 @@
+body {
+  background: rgba(0, 128, 0, 0.3);
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  margin: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.main {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  padding: 3%;
+  color: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "montserrat", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+.city {
+  border-radius: 15px 0;
+  border-style: none;
+  border-bottom: 5px solid rgb(231, 152, 5);
+  padding: 15px 15px;
+  width: 20%;
+}
+.city::placeholder {
+  font-size: 150%;
+}
+.cityEntered {
+  margin-top: 3%;
+  font-size: 200%;
+}
+.date_today {
+  font-size: 110%;
+}
+.degree_now {
+  font-size: 750%;
+  text-shadow: 3px 10px #0a0505;
+}
+#mainDegrees {
+  font-weight: 1000;
+  font-size: 100%;
+}
+.weather_now {
+  margin-top: 16px;
+  font-style: italic;
+  font-size: 230%;
+  font-weight: bold;
+}
+.range_now {
+  margin-top: 2px;
+  font-size: 150%;
+}
+div {
+  margin: 8px;
+}
